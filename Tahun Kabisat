@@ -1,0 +1,21 @@
+program Tahun_Kabisat;
+uses crt;
+
+    var
+    Tahun_masehi : longint;
+
+    begin
+        clrscr;
+
+        writeln('Masukan Tahun :');
+        read(Tahun_masehi);
+
+
+        if (Tahun_masehi mod 4 = 0) and ((Tahun_masehi mod 100 <> 0) or (Tahun_masehi mod 400 = 0)) then
+        
+        writeln(Tahun_masehi, ' Benar tahun kabisat.')
+    
+        else
+        writeln(Tahun_masehi, ' Tidak tahun kabisat.');
+
+end.
